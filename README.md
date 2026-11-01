@@ -75,7 +75,9 @@ Para reproducir:
 5. Para reproducir los entrenamientos, ejecutar sus celdas correspondientes. Para evaluar **sin volver a entrenar**, se necesitan los pesos `best.pt` obtenidos en esas ejecuciones y actualizar las rutas a los archivos disponibles.
 6. Ejecutar las celdas de evaluación y visualización. Las diez pruebas con imágenes nuevas requieren que sus archivos estén disponibles en las rutas indicadas por el notebook.
 
-**Pesos y archivos externos (imagenes incluidos):** 
+**Pesos y archivos externos (imagenes incluidos):** Los modelos entrenados (best.pt) correspondientes a los dos experimentos de detección y al modelo de clasificación, junto con las diez imágenes utilizadas en las pruebas adicionales, se encuentran disponibles en el siguiente repositorio externo: https://github.com/ifigueroa09/YOLO11n---Detecci-n-de-objetos-y-Clasificaci-n.git 
+
+Los datasets utilizados para entrenamiento, validación y prueba permanecen disponibles en sus respectivos proyectos de Roboflow.
 
 ## 6. Limitaciones importantes
 
@@ -84,3 +86,5 @@ Para reproducir:
 - Las rutas `/content/...` pertenecen al entorno temporal de Colab; pueden cambiar tras reiniciar la sesión.
 - Los archivos `best.pt`, las imágenes nuevas para inferencia y las claves privadas **no se restauran automáticamente** con solo abrir el notebook.
 - Volver a ejecutar todas las celdas puede reentrenar los modelos y producir resultados diferentes. Para reproducir exactamente una evaluación guardada, debe cargarse el peso correspondiente.
+
+- Se utilizó IA como apoyo para complementar el código base del taller, principalmente en la descarga de datasets desde Roboflow, visualización de resultados, pruebas con imágenes nuevas e interpretación de métricas.
